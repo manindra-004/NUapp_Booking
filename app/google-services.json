@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "908426668145",
+    "project_id": "numobileappp",
+    "storage_bucket": "numobileappp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:908426668145:android:2c98c05991e92b9fff93d0",
+        "android_client_info": {
+          "package_name": "com.mobileapp.nu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "908426668145-4fae6efn6dp57e4o0eimhfpa5r7kp38g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnNUf9tHbS2KMbDt_MYqKW2VoF61jxG_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "908426668145-4fae6efn6dp57e4o0eimhfpa5r7kp38g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
