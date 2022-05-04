@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/nuapp/app/src/main/res/drawable-v24/bg_bottom_navigation_view.xml" value="0.13518518518518519" />
+        <entry key="..\:/nuapp/app/src/main/res/drawable/add.xml" value="0.17222222222222222" />
+        <entry key="..\:/nuapp/app/src/main/res/drawable/ic_add.xml" value="0.26614583333333336" />
+        <entry key="..\:/nuapp/app/src/main/res/drawable/ic_baseline_add_circle_24.xml" value="0.26614583333333336" />
+        <entry key="..\:/nuapp/app/src/main/res/drawable/ic_baseline_list_alt_24.xml" value="0.26614583333333336" />
+        <entry key="..\:/nuapp/app/src/main/res/drawable/ic_close.xml" value="0.17222222222222222" />
+        <entry key="..\:/nuapp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.10555555555555556" />
+        <entry key="..\:/nuapp/app/src/main/res/drawable/round_gray.xml" value="0.1" />
+        <entry key="..\:/nuapp/app/src/main/res/drawable/round_grey.xml" value="0.18518518518518517" />
+        <entry key="..\:/nuapp/app/src/main/res/drawable/round_primary.xml" value="0.1" />
+        <entry key="..\:/nuapp/app/src/main/res/drawable/selector.xml" value="0.1" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/activity_account.xml" value="0.2359375" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/activity_admin_login.xml" value="0.2" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/activity_booked_home.xml" value="0.2" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/activity_booking.xml" value="0.1" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/activity_calendar.xml" value="0.264" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/activity_cloudtest.xml" value="0.1" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/activity_daily_calendar.xml" value="0.1" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/activity_event_edit.xml" value="0.264" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/activity_fetchdata.xml" value="0.2359375" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/activity_home.xml" value="0.3762135922330097" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/activity_logout.xml" value="0.4" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/activity_main2.xml" value="0.4" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/activity_register.xml" value="0.20989583333333334" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/activity_splash.xml" value="0.2" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/activity_sql.xml" value="0.3713592233009709" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/activity_support.xml" value="0.2359375" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/activity_supportnew.xml" value="0.25" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/activity_teacher1.xml" value="0.16" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/activity_teacher2.xml" value="0.1" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/activity_teacher3.xml" value="0.1" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/activity_week_view.xml" value="0.2" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/calender_cell.xml" value="0.2" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/content_logout.xml" value="0.264" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/event_cell.xml" value="0.1" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/fragment_first.xml" value="0.24094202898550723" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/fragment_second.xml" value="0.24094202898550723" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/hour_cell.xml" value="0.264" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/listlayouttemplate.xml" value="0.1" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/row_add_bookedslot.xml" value="0.264" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/row_booker.xml" value="0.264" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/sample_my_view.xml" value="0.1" />
+        <entry key="..\:/nuapp/app/src/main/res/layout/singlerow.xml" value="0.264" />
+        <entry key="..\:/nuapp/app/src/main/res/menu/menu.xml" value="0.264" />
+        <entry key="..\:/nuapp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/nuapp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.11770833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

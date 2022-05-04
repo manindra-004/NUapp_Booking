@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".SqlActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_Header"
+            android:background="@color/dark_red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/NUname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="75dp"
+                android:fontFamily="@font/baloo"
+                android:gravity="center"
+                android:text="API BOOKING "
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/texttitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please enter the details below"
+            android:textSize="24dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/PanelAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Panel Code"
+            android:textSize="24dp"
+            android:layout_below="@+id/texttitle"
+            android:inputType="textCapCharacters"/>
+
+        <EditText
+            android:id="@+id/NameAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textSize="24dp"
+            android:layout_below="@+id/PanelAdmin"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/DesignationAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Designation"
+            android:textSize="24dp"
+            android:layout_below="@+id/NameAdmin"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/TimingAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Timing"
+            android:textSize="24dp"
+            android:layout_below="@+id/DesignationAdmin"
+            android:inputType="textPersonName"/>
+
+        <EditText
+            android:id="@+id/DateAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TimingAdmin"
+            android:hint="Booked Date"
+            android:inputType="datetime"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/PNoAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DataAdmin"
+            android:hint="Panel Number"
+            android:inputType="textCapCharacters"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/btnInsert"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="100dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/dark_red"
+            android:text="Insert Data"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnGet"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="-100dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="-75dp"
+            android:backgroundTint="@color/dark_red"
+            android:text="Get Data"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/dark_red"
+            android:text="Update Data"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="-100dp"
+            android:layout_marginTop="-75dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/dark_red"
+            android:text="Delete Data"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/HomePage"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="-5dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/dark_red"
+            android:text="Home Page"
+            android:textColor="@color/white" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

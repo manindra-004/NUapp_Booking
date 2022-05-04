@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SupportActivity">
+
+    <ListView
+        android:id="@+id/listviewsupp"
+        android:layout_width="match_parent"
+        android:layout_height="350dp" >
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="360dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Type your feedback here"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/Sendsupp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="370dp"
+        android:text="Send"
+        android:onClick="sendButton"/>
+
+</RelativeLayout>

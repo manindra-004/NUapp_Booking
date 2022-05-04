@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountActivity"
+    android:background="#010203">
+
+    <Space
+        android:id="@+id/nopespace"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_logoutprofile"
+        android:layout_width="163dp"
+        android:layout_height="121dp"
+        android:layout_below="@id/nopespace"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/profile" />
+
+    <Space
+        android:id="@+id/nopespace2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/img_logoutprofile"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_profileview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nopespace2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+
+
+        <TextView
+            android:id="@+id/profileid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_medium"
+            android:text="ID"
+            android:textColor="@color/gray_400"
+            android:textSize="16sp"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/viewid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="65925595auth"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_below="@+id/profileid" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_profileview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout_profileview"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/profilename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Name"
+            android:textColor="@color/gray_400"
+            android:textSize="16sp"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/viewname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Admin name"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_below="@+id/profilename"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_profileview3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout_profileview2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/profileemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Email"
+            android:textColor="@color/gray_400"
+            android:textSize="16sp"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/viewemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="admin@gmail.com"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_below="@+id/profileemail"/>
+
+    </RelativeLayout>
+
+    <Space
+        android:id="@+id/nopespace3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/relativeLayout_profileview3"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@+id/nopespace3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="250dp"
+            android:layout_height="140dp"
+            app:cardBackgroundColor="@color/dark_red"
+            android:elevation="12dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="false"
+            app:cardCornerRadius="16dp">
+
+            <LinearLayout
+                android:id="@+id/linerlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Feel Free to login\ Again"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/finallogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="10dp"
+            android:text="Logout"
+            android:backgroundTint="@color/dark_red"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomNavigationView"
+        android:layout_alignParentBottom="true"
+        android:elevation="8dp"
+        app:menu="@menu/menu"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        android:background="@drawable/bg_bottom_navigation_view"/>
+
+
+
+</RelativeLayout>

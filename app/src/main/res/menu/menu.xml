@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/Menu_home"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24"/>
+
+    <item android:id="@+id/Menu_booked"
+        android:title="Booked"
+        android:icon="@drawable/ic_baseline_book_online_24"/>
+
+    <item android:id="@+id/Menu_logout"
+        android:title="Account"
+        android:icon="@drawable/ic_baseline_login_24"/>
+
+</menu>
