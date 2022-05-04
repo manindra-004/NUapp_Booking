@@ -8,6 +8,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -22,6 +24,9 @@ public class DailyCalendarActivity extends AppCompatActivity
     private TextView monthDayText;
     private TextView dayOfWeekTV;
     private ListView hourListView;
+    private Button button;
+    Window window;
+
 
 
     @Override
@@ -29,7 +34,27 @@ public class DailyCalendarActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_daily_calendar);
         initWidgets();
+
+        //TO SET COLOUR IN STATUS BAR
+        window=this.getWindow();
+        window.setStatusBarColor(this.getResources().getColor(R.color.dark_red));
+
+        ///button
+        button = findViewById(R.id.Sqlbtn);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivitySQL();
+
+            }
+        });
     }
+
+    public void openActivitySQL(){
+        Intent intent = new Intent(this, SqlActivity.class);
+        startActivity(intent);
+    }
+
 
     private void initWidgets()
     {
@@ -90,4 +115,5 @@ public class DailyCalendarActivity extends AppCompatActivity
     {
         startActivity(new Intent(this, EventEditActivity.class));
     }
+
 }

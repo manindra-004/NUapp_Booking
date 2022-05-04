@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -16,6 +17,8 @@ public class EventEditActivity extends AppCompatActivity
     private TextView eventDateTV, eventTimeTV;
 
     private LocalTime time;
+    Window window;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +28,10 @@ public class EventEditActivity extends AppCompatActivity
         time = LocalTime.now();
         eventDateTV.setText("Date: " + CalendarUtils.formattedDate(CalendarUtils.selectedDate));
         eventTimeTV.setText("Date: " + CalendarUtils.formattedTime(time));
+
+        //TO SET COLOUR IN STATUS BAR
+        window=this.getWindow();
+        window.setStatusBarColor(this.getResources().getColor(R.color.dark_red));
     }
 
     public void initWidgets()

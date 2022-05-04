@@ -19,7 +19,7 @@
             android:layout_weight="1"
             android:text="@string/back"
             android:textColor="@color/white"
-            android:background="@null"
+            android:backgroundTint="@color/dark_red"
             android:textStyle="bold"
             android:onClick="previousDayAction"
             android:textSize="20sp"/>
@@ -40,7 +40,7 @@
             android:layout_weight="1"
             android:text="@string/forword"
             android:textColor="@color/white"
-            android:background="@null"
+            android:backgroundTint="@color/dark_red"
             android:textStyle="bold"
             android:onClick="nextDayAction"
             android:textSize="20sp"/>
@@ -57,11 +57,12 @@
         android:textAlignment="center"
         android:textSize="18sp"/>
     <Button
+        android:id="@+id/Sqlbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Event"
+        android:text="BOOK SLOT"
         android:textColor="@color/white"
-        android:background="@null"
+        android:backgroundTint="@color/dark_red"
         android:textStyle="bold"
         android:onClick="newEventAction"
         android:layout_gravity="center"

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#010203">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,8 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_gravity="center_horizontal"
-            android:src="@drawable/google"/>
-
+            android:src="@drawable/niitlogo" />
 
         <TextView
             android:layout_width="match_parent"
@@ -31,7 +31,7 @@
             android:shadowColor="#0E0E0E"
             android:text="Sign In"
             android:textAlignment="center"
-            android:textColor="#000000"
+            android:textColor="@color/white"
             android:textSize="45sp" />
 
         <TextView
@@ -41,7 +41,7 @@
             android:shadowColor="#0E0E0E"
             android:text="Sign-In to connect us"
             android:textAlignment="center"
-            android:textColor="#000000"
+            android:textColor="@color/white"
             android:textSize="14sp" />
 
 
@@ -51,30 +51,35 @@
 
 
         <Button
-            android:id="@+id/google_signIn"
+            android:id="@+id/Admin_signIn"
             android:layout_width="match_parent"
-            android:layout_height="84dp"
-            android:background="@color/blue"
-            android:drawableStart="@drawable/google"
+            android:layout_height="60dp"
+            android:backgroundTint="#811b1e"
             android:elevation="8dp"
-            android:text="Sign In with Google"
-            android:textColor="#fff" />
+            android:text="Sign In as Admin"
+            android:textColor="@color/white" />
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="20dp"/>
 
-        <Button
-        android:id="@+id/normal_signIn"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#fff"
-        android:drawableStart="@drawable/google"
-        android:elevation="8dp"
-        android:text="Continue Sign in"
-        android:textColor="#fff" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/googlesigninbutton"
+            android:id="@+id/google_signInBtn"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:shadowColor="#0E0E0E"
+            android:text="Sign-In as Teacher"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
 
     </LinearLayout>
 
-</ScrollView>
+
+</RelativeLayout>

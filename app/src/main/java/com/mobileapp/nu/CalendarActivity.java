@@ -3,32 +3,37 @@ package com.mobileapp.nu;
 import static com.mobileapp.nu.CalendarUtils.daysInMonthArray;
 import static com.mobileapp.nu.CalendarUtils.monthYearFromDate;
 
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
+
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.TextView;
-import android.widget.Toast;
+
 
 import java.time.LocalDate;
-import java.time.YearMonth;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class CalendarActivity extends AppCompatActivity implements CalendarAdapter.OnItemListener
 {
     private TextView monthYearText;
     private RecyclerView calendarRecyclerView;
-
+    Window window;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar);
+
+        //TO SET COLOUR IN STATUS BAR
+        window=this.getWindow();
+        window.setStatusBarColor(this.getResources().getColor(R.color.dark_red));
+
         initWidgets();
         CalendarUtils.selectedDate = LocalDate.now();
         setMonthView();
@@ -81,4 +86,5 @@ public class CalendarActivity extends AppCompatActivity implements CalendarAdapt
         startActivity(new Intent(this, weekViewActivity.class));
 
     }
+
 }

@@ -114,7 +114,7 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
 
         if(cricketersList.size()==0){
             result = false;
-            Toast.makeText(this, "Add Cricketers First!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Add in Booking!", Toast.LENGTH_SHORT).show();
         }else if(!result){
             Toast.makeText(this, "Enter All Details Correctly!", Toast.LENGTH_SHORT).show();
         }

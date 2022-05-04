@@ -1,6 +1,5 @@
 package com.mobileapp.nu;
 
-import static com.mobileapp.nu.CalendarUtils.daysInMonthArray;
 import static com.mobileapp.nu.CalendarUtils.daysInWeekArray;
 import static com.mobileapp.nu.CalendarUtils.monthYearFromDate;
 
@@ -11,9 +10,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -23,12 +22,16 @@ public class weekViewActivity extends AppCompatActivity implements CalendarAdapt
     private TextView monthYearText;
     private RecyclerView calendarRecyclerView;
     private ListView eventListView;
+    Window window;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_week_view);
+        //TO SET COLOUR IN STATUS BAR
+        window=this.getWindow();
+        window.setStatusBarColor(this.getResources().getColor(R.color.dark_red));
         initWidgets();
         setWeekView();
 
@@ -51,7 +54,7 @@ public class weekViewActivity extends AppCompatActivity implements CalendarAdapt
         RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getApplicationContext(),7);
         calendarRecyclerView.setLayoutManager(layoutManager);
         calendarRecyclerView.setAdapter(calendarAdapter);
-        setEventAdpater();
+        setEventAdapter();
     }
 
 
@@ -80,11 +83,11 @@ public class weekViewActivity extends AppCompatActivity implements CalendarAdapt
     protected void onResume()
     {
         super.onResume();
-        setEventAdpater();
+        setEventAdapter();
 
     }
 
-    private void setEventAdpater()
+    private void setEventAdapter()
     {
         ArrayList<Event> dailyEvents = Event.eventsForDate(CalendarUtils.selectedDate);
         EventAdapter eventAdapter = new EventAdapter(getApplicationContext(), dailyEvents);

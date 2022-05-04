@@ -18,7 +18,9 @@
         android:paddingLeft="10dp"
         android:textColor="@color/black"
         android:layout_width="match_parent"
-        android:layout_height="40dp"></EditText>
+        android:layout_height="40dp">
+
+    </EditText>
 
     <FrameLayout
         android:layout_width="wrap_content"
@@ -28,7 +30,9 @@
         <androidx.appcompat.widget.AppCompatSpinner
             android:id="@+id/spinner_team"
             android:layout_width="150dp"
-            android:layout_height="40dp"></androidx.appcompat.widget.AppCompatSpinner>
+            android:layout_height="40dp">
+
+        </androidx.appcompat.widget.AppCompatSpinner>
     </FrameLayout>
 
     <ImageView
@@ -39,6 +43,8 @@
         android:layout_marginLeft="5dp"
         android:layout_gravity="center_vertical"
         android:src="@drawable/ic_close"
-        app:tint="@color/black"></ImageView>
+        app:tint="@color/black">
+
+    </ImageView>
 
 </LinearLayout>

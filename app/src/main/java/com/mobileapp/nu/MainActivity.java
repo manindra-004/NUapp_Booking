@@ -1,10 +1,18 @@
 package com.mobileapp.nu;
 
+import static com.mobileapp.nu.CalendarUtils.daysInMonthArray;
+import static com.mobileapp.nu.CalendarUtils.monthYearFromDate;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -12,21 +20,60 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
     TextView name;
     ImageView photo;
     FirebaseAuth mAuth;
-    private Button button ,button1;
+    private Button button, button1;
+    private TextView monthYearText;
+
+    BottomNavigationView bottomNavigationView;
+    Window window;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        CalendarUtils.selectedDate = LocalDate.now();
+
+
+        //bottom navigation view
+        bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        bottomNavigationView.setSelectedItemId(R.id.Menu_home);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                switch (item.getItemId()){
+
+                    case R.id.Menu_home:
+                        return true;
+
+                    case R.id.Menu_booked:
+                        startActivity(new Intent(getApplicationContext(),BookedHomeActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+
+                    case R.id.Menu_logout:
+                        startActivity(new Intent(getApplicationContext(),AccountActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                }
+                return false;
+            }
+        });
 
         ///button
         button = findViewById(R.id.button1);
@@ -37,6 +84,8 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+
 
         ///button
         button1 = findViewById(R.id.button2);
@@ -68,9 +117,13 @@ public class MainActivity extends AppCompatActivity {
             name.setText(user.getDisplayName());
         }
 
+        //TO SET COLOUR IN STATUS BAR
+        window=this.getWindow();
+        window.setStatusBarColor(this.getResources().getColor(R.color.dark_red));
+
     }
     public void openActivityMain(){
-        Intent intent = new Intent(this, CalendarActivity.class);
+        Intent intent = new Intent(this, weekViewActivity.class);
         startActivity(intent);
     }
 
@@ -78,4 +131,5 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity2.class);
         startActivity(intent);
     }
+
 }

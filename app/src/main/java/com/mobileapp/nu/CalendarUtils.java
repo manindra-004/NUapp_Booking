@@ -51,13 +51,13 @@ public class CalendarUtils
     {
         ArrayList<LocalDate> daysInMonthArray = new ArrayList<>();
 
-        YearMonth yearMonth = YearMonth.from(selectedDate);
+        YearMonth yearMonth = YearMonth.from(CalendarUtils.selectedDate);
         int daysInMonth = yearMonth.lengthOfMonth();
 
-        LocalDate prevMouth = selectedDate.minusMonths(1);
-        LocalDate nextMouth = selectedDate.plusMonths(1);
+        LocalDate prevMouth = CalendarUtils.selectedDate.minusMonths(1);
+        LocalDate nextMouth = CalendarUtils.selectedDate.plusMonths(1);
 
-        YearMonth prevYearMonth = YearMonth.from(prevMouth);
+        YearMonth prevMonth = YearMonth.from(prevMouth);
         int prevDaysInMonth = yearMonth.lengthOfMonth();
 
         LocalDate firstOfMonth = CalendarUtils.selectedDate.withDayOfMonth(1);
@@ -70,7 +70,7 @@ public class CalendarUtils
             else if (i > daysInMonth + dayOfWeek)
                 daysInMonthArray.add(LocalDate.of(nextMouth.getYear(),nextMouth.getMonth(),i - dayOfWeek - daysInMonth));
             else
-                daysInMonthArray.add(LocalDate.of(selectedDate.getYear(),selectedDate.getMonth(),i - dayOfWeek));
+                daysInMonthArray.add(LocalDate.of(CalendarUtils.selectedDate.getYear(), CalendarUtils.selectedDate.getMonth(),i - dayOfWeek));
         }
         return daysInMonthArray;
     }

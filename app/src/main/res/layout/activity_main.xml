@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#010203"
     tools:context=".MainActivity">
 
     <RelativeLayout
         android:id="@+id/relativeLayout_Header"
+        android:background="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -21,12 +22,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:layout_centerInParent="true"
-            android:layout_marginStart="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="31dp"
             android:fontFamily="@font/baloo"
             android:text="NIIT UNIVERSITY"
-            android:textColor="@color/black"
-            android:textSize="21sp" />
+            android:textColor="@color/white"
+            android:textSize="30sp" />
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/img_search"
@@ -65,10 +66,11 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_centerInParent="true"
-            android:layout_marginStart="100dp"
+            android:layout_marginStart="135dp"
             android:fontFamily="@font/baloo"
-            android:text="ADMIN AJAY KUMAR"
-            android:textColor="#D8000000"
+            android:gravity="center"
+            android:text="ADMIN NAME"
+            android:textColor="@color/white"
             android:textSize="21sp" />
     </RelativeLayout>
 
@@ -86,7 +88,7 @@
             android:id="@+id/cardview_background2"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            app:cardBackgroundColor="@color/black"
+            app:cardBackgroundColor="@color/dark_red"
             app:cardCornerRadius="16dp">
 
             <ImageView
@@ -112,7 +114,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/baloo"
                 android:text="DATE"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="25sp" />
 
             <TextView
@@ -121,7 +123,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/baloo"
                 android:text="To book slote"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -132,10 +134,10 @@
             android:layout_height="48dp"
             android:layout_alignParentEnd="true"
             android:layout_centerInParent="true"
-            android:background="#fff"
+            android:backgroundTint="#811b1e"
             android:fontFamily="@font/poppins_medium"
             android:text="@string/open"
-            android:textColor="@color/black" />
+            android:textColor="@color/white" />
 
     </RelativeLayout>
 
@@ -152,7 +154,7 @@
             android:id="@+id/cardview_background3"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            app:cardBackgroundColor="@color/black"
+            app:cardBackgroundColor="@color/dark_red"
             app:cardCornerRadius="16dp">
 
             <ImageView
@@ -178,7 +180,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/baloo"
                 android:text="BOOKED"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="25sp" />
 
             <TextView
@@ -187,7 +189,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/baloo"
                 android:text="More info of slot"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="16sp" />
 
         </LinearLayout>
@@ -198,11 +200,24 @@
             android:layout_height="48dp"
             android:layout_alignParentEnd="true"
             android:layout_centerInParent="true"
-            android:background="#fff"
+            android:backgroundTint="#811b1e"
             android:fontFamily="@font/poppins_medium"
             android:text="@string/open"
-            android:textColor="@color/black" />
+            android:textColor="@color/white" />
 
     </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_bottom_navigation_view"
+        android:elevation="8dp"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu" />
+
+
 
 </RelativeLayout>

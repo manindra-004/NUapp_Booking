@@ -14,7 +14,7 @@
         android:layout_gravity="center"
         android:text="Weekly"
         android:textColor="@color/white"
-        android:background="@null"
+        android:backgroundTint="@color/dark_red"
         android:textStyle="bold"
         android:onClick="weeklyAction"
         android:textSize="20sp"/>
@@ -31,7 +31,7 @@
             android:layout_weight="1"
             android:text="@string/back"
             android:textColor="@color/white"
-            android:background="@null"
+            android:backgroundTint="@color/dark_red"
             android:textStyle="bold"
             android:onClick="previousMonthAction"
             android:textSize="20sp"/>
@@ -52,7 +52,7 @@
             android:layout_weight="1"
             android:text="@string/forword"
             android:textColor="@color/white"
-            android:background="@null"
+            android:backgroundTint="@color/dark_red"
             android:textStyle="bold"
             android:onClick="nextMonthAction"
             android:textSize="20sp"/>
