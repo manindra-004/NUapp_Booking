@@ -1,5 +1,5 @@
 # NUapp_SlotBooking
-I have made the Nu App which makes the administrator easy to book a slot 
+I have made the Nu App which makes the administrator easy to book a slot for students and teachers 
 
 
 # App Features
