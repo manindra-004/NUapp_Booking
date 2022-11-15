@@ -15,3 +15,4 @@ I have made the Nu App which makes the administrator easy to book a slot for stu
 ![Screenshot 2022-11-15 154956](https://user-images.githubusercontent.com/74203180/201895037-bb1789da-5d24-4b8e-8787-5f4ecf7160c5.png)
 
 # Adobe XD
+![Screenshot 2022-11-15 162345](https://user-images.githubusercontent.com/74203180/201902749-bb789a7b-0b51-4e20-aacd-76703da7a8a5.png)
