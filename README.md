@@ -1,6 +1,8 @@
 # NUapp_SlotBooking
 I have made the Nu App which makes the administrator easy to book a slot for students and teachers 
 
+# Running App
+https://user-images.githubusercontent.com/74203180/204213917-715539fb-8857-4f8f-9e6f-d35b40545af5.mp4
 
 # App Features
 ![Screenshot 2022-11-15 154050](https://user-images.githubusercontent.com/74203180/201895028-446f0039-b3be-4201-b276-098d47de11d9.png)
