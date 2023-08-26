@@ -1,5 +1,5 @@
 # NUapp_SlotBooking
-I have made the Nu App which makes the administrator easy to book a slot for students and teachers 
+Development of the Nu App, which simplifies the process for administrators to book slots for both students and teachers. The app also features authentication for both sides of the interface, push notifications, and integration with Microsoft SQL for enhanced functionality.
 
 # Running App
 https://user-images.githubusercontent.com/74203180/204213917-715539fb-8857-4f8f-9e6f-d35b40545af5.mp4
